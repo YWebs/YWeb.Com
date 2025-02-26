@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Y Webs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Login to Y Webs</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button onclick="login()">Login</button>
+        <p id="error-message" style="color: red;"></p>
+        <p><a href="#">Forgot Password?</a></p>
+        <p>Don't have an account? <a href="register.html">Sign up</a></p>
+    </div>
+
+    <script>
+        function login() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            const errorMessage = document.getElementById("error-message");
+
+            if (username === "admin" && password === "1234") {
+                alert("Login successful!");
+                window.location.href = "index.html"; // Redirect to the main site
+            } else {
+                errorMessage.textContent = "Incorrect username or password";
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+

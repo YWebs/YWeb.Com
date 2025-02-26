@@ -1,0 +1,101 @@
+/* تعيين الخطوط الأساسية والخلفية */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://www.solidbackgrounds.com/download/2560x1440-blue-stained-glass-free-website-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* تحسين شكل العناوين */
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* تحسين شكل الحاويات */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    color: black;
+}
+
+/* تحسين المدخلات */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* تحسين الأزرار */
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* تحسين عرض المنتجات */
+.web-types {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.web-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+    text-align: center;
+    max-width: 300px;
+}
+
+.web-item:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}
+
+/* تحسين الصور */
+.web-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* تحسين استجابة الموقع للأجهزة الصغيرة */
+@media (max-width: 768px) {
+    .web-types {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .web-item {
+        width: 90%;
+    }
+}
